@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header>
+    <header className="">
       <section></section>
       <nav>
         <Link href="/shop">Shop</Link>
