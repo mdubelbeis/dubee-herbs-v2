@@ -1,10 +1,11 @@
-import Link from "next/link";
 import Header from "../components/Header/Header";
+import MobileHeader from "../components/MobileHeader/MobileHeader";
 
 const HomePage: React.FC = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
+      <MobileHeader />
       <main></main>
       <footer></footer>
     </>
