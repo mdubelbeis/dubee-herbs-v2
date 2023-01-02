@@ -3,6 +3,7 @@ import Logo from "../logo/Logo";
 import MenuIcon from "../MenuIcon/MenuIcon";
 import CloseMenu from "../CloseMenu/CloseMenu";
 import Link from "next/link";
+import Footer from "../Footer/Footer";
 
 const MobileHeader: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const MobileHeader: React.FC = () => {
       </section>
     </header>
   ) : (
-    <header className="bg-primary h-screen w-screen fixed top-0 left-0 flex flex-col items-center font-main text-2xl px-6 py-1">
+    <header className="bg-primary h-screen w-screen fixed top-0 gap-32 left-0 flex flex-col items-center font-main text-2xl px-6 py-8">
       <section className="flex items-center justify-between w-full">
         <CloseMenu handleMenuClick={handleMobileMenu} />
         <Link href="/" onClick={handleMobileMenu}>
@@ -37,6 +38,7 @@ const MobileHeader: React.FC = () => {
           <Link href="/cart">Cart</Link>
         </nav>
       </section>
+      <Footer />
     </header>
   );
 };
