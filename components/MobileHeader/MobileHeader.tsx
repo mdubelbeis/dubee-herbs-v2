@@ -4,17 +4,14 @@ import ClosedMenuIcon from "../ClosedMenu/ClosedMenuIcon";
 
 const MobileHeader: React.FC = () => {
   return (
-    <header>
+    <header className="flex justify-between items-center font-main text-2xl p-4">
       <section>
         <ClosedMenuIcon />
       </section>
-      <section>
+      <section className="relative mr-4">
         <Logo />
-        <span>Du-Bee Herbs</span>
+        <h1>Du-Bee Herbs</h1>
       </section>
-      <nav>
-        <Link href="/shop">Shop</Link>
-      </nav>
     </header>
   );
 };
