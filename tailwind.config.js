@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         main: ["Architects Daughter", "cursive"],
       },
+      colors: {
+        primary: "#FFC313",
+      },
     },
   },
   plugins: [],
