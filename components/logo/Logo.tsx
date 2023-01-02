@@ -1,9 +1,21 @@
 import Image from "next/image";
 import React from "react";
 
-const Logo: React.FC = () => {
+interface LogoProps {
+  position: string;
+  height: number;
+  width: number;
+}
+
+const Logo: React.FC<LogoProps> = ({ position, height, width }) => {
   return (
-    <Image src={"/logo/bee-revise.png"} alt="logo" width={100} height={100} />
+    <Image
+      src={"/logo/bee-revise.png"}
+      alt="logo"
+      width={width}
+      height={height}
+      className={`${position} -top-6 -right-8 transform rotate-12`}
+    />
   );
 };
 
