@@ -1,16 +1,18 @@
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 import MissionStatement from "../components/MissionStatement/MissionStatement";
-import MobileHeader from "../components/MobileHeader/MobileHeader";
+import MobileHeader from "../components/Header/MobileHeader";
+import DesktopHeader from "../components/Header/DesktopHeader";
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <MobileHeader />
+    <>
+      <Header />
       <main>
         <MissionStatement />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

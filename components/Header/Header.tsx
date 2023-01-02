@@ -1,14 +1,12 @@
-import Link from "next/link";
+import MobileHeader from "./MobileHeader";
+import DesktopHeader from "./DesktopHeader";
 
 const Header: React.FC = () => {
   return (
-    <header className="">
-      <section></section>
-      <nav>
-        <Link href="/shop">Shop</Link>
-        <Link href="/signin">Sign-in | Register</Link>
-      </nav>
-    </header>
+    <>
+      <MobileHeader />
+      <DesktopHeader />
+    </>
   );
 };
 

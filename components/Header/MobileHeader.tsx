@@ -12,21 +12,22 @@ const MobileHeader: React.FC = () => {
   };
 
   return !isOpen ? (
-    <header className="flex justify-between items-center font-main text-2xl p-6">
+    <header className={`flex justify-between items-center px-4 lg:hidden`}>
       <section>
         <MenuIcon handleMenuClick={handleMobileMenu} />
       </section>
-      <section className="relative mr-4">
-        <Logo position="absolute" width={50} height={50} />
-        <h1>Du-Bee Herbs</h1>
+      <section>
+        <Link href="/">
+          <Logo layout="mobile" width={100} height={100} />
+        </Link>
       </section>
     </header>
   ) : (
-    <header className="bg-primary h-screen w-screen flex flex-col gap-40 items-center font-main text-2xl px-6 py-1">
+    <header className="bg-primary h-screen w-screen fixed top-0 left-0 flex flex-col items-center font-main text-2xl px-6 py-1">
       <section className="flex items-center justify-between w-full">
         <CloseMenu handleMenuClick={handleMobileMenu} />
         <Link href="/" onClick={handleMobileMenu}>
-          <Logo position="block" width={75} height={75} />
+          <Logo layout="desktop" width={75} height={75} />
         </Link>
       </section>
       <section>

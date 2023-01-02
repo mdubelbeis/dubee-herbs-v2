@@ -1,7 +1,7 @@
 import React from "react";
 
-const index: React.FC = () => {
-  return <div>Contact</div>;
+const ContactPage: React.FC = () => {
+  return <h3>CONTACT US</h3>;
 };
 
-export default index;
+export default ContactPage;
