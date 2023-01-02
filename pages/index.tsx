@@ -1,8 +1,13 @@
+import Link from "next/link";
+import Header from "../components/Header/Header";
+
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <h1>Homepage</h1>
-    </div>
+    <>
+      <Header />
+      <main></main>
+      <footer></footer>
+    </>
   );
 };
 
