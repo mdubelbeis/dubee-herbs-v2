@@ -65,22 +65,22 @@ const InstagramIcon: React.FC = () => {
           xlinkHref="#a"
         />
       </defs>
-      <g clip-path="url(#b)">
+      <g clipPath="url(#b)">
         <circle cx="27.5" cy="121.5" r="137.5" fill="url(#a)" />
       </g>
-      <g clip-path="url(#c)">
+      <g clipPath="url(#c)">
         <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)" />
       </g>
-      <g clip-path="url(#e)">
+      <g clipPath="url(#e)">
         <circle cx="13.87" cy="303.38" r="185.63" fill="url(#f)" />
       </g>
-      <g clip-path="url(#g)">
+      <g clipPath="url(#g)">
         <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)" />
       </g>
-      <g clip-path="url(#h)">
+      <g clipPath="url(#h)">
         <circle cx="27.5" cy="-41.5" r="148.5" fill="url(#d)" />
       </g>
-      <g clip-path="url(#i)">
+      <g clipPath="url(#i)">
         <circle cx="13.87" cy="-22.62" r="185.63" fill="url(#j)" />
       </g>
       <circle cx="82" cy="46" r="5" fill="#fff" />
@@ -95,8 +95,8 @@ const InstagramIcon: React.FC = () => {
         y="32"
         fill="none"
         stroke="#fff"
-        stroke-miterlimit="10"
-        stroke-width="8"
+        strokeMiterlimit="10"
+        strokeWidth="8"
         rx="12"
         ry="12"
       />

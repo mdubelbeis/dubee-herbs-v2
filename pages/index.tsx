@@ -1,9 +1,7 @@
-import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import MissionStatement from "../components/MissionStatement/MissionStatement";
-import MobileHeader from "../components/Header/MobileHeader";
-import DesktopHeader from "../components/Header/DesktopHeader";
 import ConnectWithUs from "../components/ConnectWithUs/ConnectWithUs";
+import EmailListForm from "../components/EmailListForm/EmailListForm";
 
 const HomePage: React.FC = () => {
   return (
@@ -12,6 +10,7 @@ const HomePage: React.FC = () => {
       <main className="w-full p-4 max-w-4xl mx-auto">
         <MissionStatement />
         <ConnectWithUs />
+        <EmailListForm />
       </main>
     </>
   );

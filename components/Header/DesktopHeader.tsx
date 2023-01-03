@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
-
 import Link from "next/link";
+
 import Logo from "../logo/Logo";
 import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 

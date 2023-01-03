@@ -10,7 +10,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ height, width, layout }) => {
   let filteredStyles = "";
   if (layout === "desktop") {
-    filteredStyles = `absolute bottom-0 -right-24 rotate-12`;
+    filteredStyles = `absolute bottom-2 -right-28 rotate-12`;
   }
 
   return (
