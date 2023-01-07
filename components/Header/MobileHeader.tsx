@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../logo/Logo";
+import Logo from "../Logo/Logo";
 import MenuIcon from "../icons/MenuIcon";
 import CloseMenu from "../icons/CloseMenu";
 import Link from "next/link";
@@ -14,18 +14,13 @@ const MobileHeader: React.FC = () => {
   };
 
   return !isOpen ? (
-    <header className={`flex justify-between items-center px-4 lg:hidden`}>
+    <header className={`flex items-center px-4 lg:hidden w-full`}>
       <section>
         <MenuIcon handleMenuClick={handleMobileMenu} />
       </section>
-      <section className="hidden md:flex md:text-5xl md:font-main">
+      <section className="text-5xl font-main">
         <Link href="/">
-          <h1>Du-Bee Herbs</h1>
-        </Link>
-      </section>
-      <section>
-        <Link href="/">
-          <Logo layout="mobile" width={100} height={100} />
+          <Logo />
         </Link>
       </section>
     </header>
@@ -34,7 +29,7 @@ const MobileHeader: React.FC = () => {
       <section className="flex items-center justify-between w-full">
         <CloseMenu handleMenuClick={handleMobileMenu} />
         <Link href="/" onClick={handleMobileMenu}>
-          <Logo layout="desktop" width={75} height={75} />
+          <Logo />
         </Link>
       </section>
       <section>

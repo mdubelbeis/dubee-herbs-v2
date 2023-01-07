@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Logo from "../logo/Logo";
+import Logo from "../Logo/Logo";
 import ShoppingCartIcon from "../ShoppingCartIcon/ShoppingCartIcon";
 
 const DesktopHeader: React.FC = () => {
@@ -11,8 +11,7 @@ const DesktopHeader: React.FC = () => {
   return (
     <header className="hidden lg:flex lg:flex-col lg:justify-center lg:items-center lg:gap-4 lg:w-full lg:py-20">
       <section className="lg:flex lg:flex-col lg:text-6xl lg:font-main lg:relative">
-        <h1>Du-Bee Herbs</h1>
-        <Logo layout="desktop" height={150} width={150} />
+        <Logo mobileWidth={"w-[250px]"} />
       </section>
       <section className="border-b-[1px] border-primary border-opacity-50 p-4">
         <nav className="flex gap-4 uppercase text-lg tracking-wider">

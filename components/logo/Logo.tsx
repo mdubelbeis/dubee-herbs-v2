@@ -1,25 +1,24 @@
 import Image from "next/image";
 import React from "react";
+import logo from "../../public/logo/Du-Bee Herbs.png";
 
 interface LogoProps {
-  height: number;
-  width: number;
-  layout: string;
+  mobileWidth?: string;
+  desktopWidth?: string;
+  mobileHeight?: string;
+  desktopHeight?: string;
 }
-
-const Logo: React.FC<LogoProps> = ({ height, width, layout }) => {
-  let filteredStyles = "";
-  if (layout === "desktop") {
-    filteredStyles = `absolute bottom-2 -right-28 rotate-12`;
-  }
-
+const Logo: React.FC<LogoProps> = ({
+  mobileHeight,
+  mobileWidth,
+  desktopHeight,
+  desktopWidth,
+}) => {
   return (
     <Image
-      src={"/logo/bee-revise.png"}
+      src={logo}
       alt="logo"
-      width={width}
-      height={height}
-      className={filteredStyles}
+      className={`${mobileWidth} ${desktopWidth} ${mobileHeight} ${desktopHeight} justify-self-end`}
     />
   );
 };
